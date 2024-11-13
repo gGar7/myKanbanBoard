@@ -1,25 +1,22 @@
 ## Project View
 
 <kbd>![](https://res.cloudinary.com/anshumxn09/image/upload/v1692799526/test/quickSell2_pjyru9.png)</kbd>
+🗂️ Kanban Board
+A responsive and dynamic Kanban board application built with React JS and Redux Toolkit, designed to streamline task management by organizing tasks efficiently. This board supports grouping, sorting, and an intuitive loading animation for a seamless user experience.
 
-<kbd>![](https://res.cloudinary.com/anshumxn09/image/upload/v1692799514/test/quickSell_nycbcs.png)</kbd>
-
-Kanban Board
-A responsive and dynamic Kanban board built with React JS, enabling users to manage tasks effectively. This application features grouping by various criteria (status, user, priority) and implements a loading animation for smooth data loading experience.
-
-Features
-Dynamic Grouping: Group tasks by status, user, or priority.
-Ordering Options: Sort tasks by title or priority within each group.
-Responsive UI: Utilizes React icons and CSS styling for a visually engaging interface.
-Loading Spinner: Displays a loading spinner while fetching data from the API.
-Redux Integration: State management using Redux Toolkit for efficient handling of tasks and user data.
-Tech Stack
+🌟 Features
+🗄️ Dynamic Grouping: Group tasks by status, user, or priority.
+📝 Ordering Options: Sort tasks within each group by title or priority.
+💻 Responsive UI: Designed with React Icons and CSS for a polished look and feel.
+⏳ Loading Animation: Displays a spinner while fetching data from the backend API.
+📦 State Management: Powered by Redux Toolkit for efficient data handling.
+🚀 Tech Stack
 Frontend: React JS
 State Management: Redux Toolkit
-Backend API: Axios for data fetching
+Data Fetching: Axios
 Icons: React Icons
-CSS: Styled components for a polished UI
-Installation
+Styling: CSS
+⚙️ Installation
 Clone the repository:
 bash
 Copy code
@@ -32,26 +29,24 @@ Start the application:
 bash
 Copy code
 npm start
-API Reference
-The application fetches task data from QuickSell API.
+🔗 API Reference
+The application fetches data from the QuickSell API, retrieving tasks and user details for a rich Kanban experience.
 
-Component Breakdown
+📂 Component Breakdown
 1. DashView
-The main dashboard component that displays grouped tasks with options to sort by title or priority. Utilizes the useSelector hook to access Redux state for tasks and user data.
-
-Props: None
-State: Uses Redux selectedData and user from SelectDataReducer.
-Child Components: Renders individual Card components for each task.
+Main dashboard displaying grouped tasks with sorting options.
+Accesses state for tasks and user data using Redux useSelector.
+Child Components: Renders individual Card components.
 2. Card
-A reusable component to display individual tasks with relevant data such as title and tag.
-
+Reusable component to display individual tasks.
 Props: id, title, tag
 3. Loading
-Displays a loading spinner using the Circles component from react-loader-spinner.
+Spinner component for loading feedback, powered by react-loader-spinner.
+🔄 State Management (Redux Toolkit)
+This project uses Redux Toolkit for simplified state management:
 
-4. Reducers
-DataReducer: Handles task data fetching and storage in state.
-SelectDataReducer: Manages selected group data and user status.
-Redux Actions
-fetchAllData: Fetches data from the API and updates the Redux state.
-selectData: Groups tasks based on selected criteria (status, user, priority) and applies optional sorting.
+Reducers: DataReducer and SelectDataReducer handle fetching and managing task data.
+Async Actions: fetchAllData and selectData manage asynchronous data loading and state updates.
+<kbd>![](https://res.cloudinary.com/anshumxn09/image/upload/v1692799514/test/quickSell_nycbcs.png)</kbd>
+
+
